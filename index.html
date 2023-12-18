@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette</title>
+    <link rel="stylesheet" href="./stylePal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5558bc8b45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Images/pallete_logo.PNG" alt="logo" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">MAC</a></li>
+                    <li><a href="#event">Events</a></li>
+                    <li><a href="#Team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <hr>
+            <div class="header-text">
+                <div class="header-content">
+                    Hi! We are <span class="purple">Palette</span>
+                    <div>The Art Club of IIT Gandhinagar</div>
+                    <div>where you'll find a vibrant community</div>
+                    <div>of individuals who embrace their </div>
+                    <div>creativity and thrive as</div>
+                    <span id="element"></span>
+                    <!--<div class="buttons">
+                    <a href="https://docs.google.com/document/d/1YxKlB3LAZhQ4Dou3_c_VqIXSsuR3Lt3gKLbhZCq3Oz0/edit"
+                        class="btn" download>Download Brochure</a>
+                    <a href="https://github.com/PaletteClub" class="btn">Visit Github</a>
+                </div>-->
+                </div>
+                <img src="./Images/pal3.PNG" alt="Image description" class="picture">
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['Artists', 'Creators', 'Innovators'],
+                        typeSpeed: 50,
+                    });
+                </script>
+            </div>
+            <hr>
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="./Images/pal4.PNG" alt="Image">
+                        </div>
+                        <div class="col-2">
+                            <h1 class="subtitle">Monthly Art Challenge</h1>
+                            <p>During this boring college life, all of us need that refreshing break that tickles our
+                                creativity. Hence, we present, a monthly art challenge!</p>
+                            <p>There will be a new theme every month. Participants will have to create something based
+                                on that. Other than this, there is no limitation. The top five entries will feature on
+                                our Instagram handle.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Click here for the details
+                                    for participation</p>
+                            </div>
+                            <div class="tab-contents" id="skills">
+                                <ul>
+                                    <li>One person can submit <span>more than one</span> piece.</li>
+                                    <li>The theme for each month will be posted here. For this month, it will be
+                                        available soon.</li>
+                                    <li>The entries will be mailed to <span>palette@iitgn.ac.in</span>.</li>
+                                    <li>The participants will have a whole month to send their art pieces.</li>
+                                    <li><span>Top five</span> will be posted at the beginning of the next month, with
+                                        the next
+                                        month's theme.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="month-container">
+                        <h1>July Art Challenge</h1>
+                        <div class="col-1">
+                            <img src="./Images/july_pal.PNG" alt="July Challenge Image" class="challenge-image">
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                Welcome to the July Art Challenge! This month's theme is "Drops." Dive into the world of
+                                creativity as you explore the beauty, elegance, and mystery behind drops of various
+                                forms.
+                            </p>
+                            <p>
+                                Whether it's raindrops, dewdrops, or teardrops, let your imagination flow. Capture the
+                                essence of drops through your preferred medium – be it painting, photography, or digital
+                                art.
+                            </p>
+                            <p>
+                                Share your unique perspective on drops and join our vibrant artistic community. Unleash
+                                your
+                                creativity, and let your art make a splash!
+                            </p>
+                        </div>
+                        <div class="tab-container">
+                            <div class="tab" onclick="toggleTab('july-entries-tab')" data-tab="july-entries-tab">Monthly
+                                Entries</div>
+                            <div id="july-entries-tab" class="tab-content">
+                                <!-- Placeholder images, replace with your actual images -->
+                                <img src="./Images/jul_1.PNG" alt="Entry 1">
+                                <img src="./Images/jul_2.PNG" alt="Entry 2">
+                                <img src="./Images/jul_3.PNG" alt="Entry 3">
+                                <img src="./Images/jul_4.PNG" alt="Entry 4">
+                                <img src="./Images/jul_5.PNG" alt="Entry 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="month-container">
+                        <h1>August Art Challenge</h1>
+                        <div class="col-1">
+                            <img src="./Images/aug_pall.PNG" alt="Aug Challenge Image" class="challenge-image">
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                Welcome to the August Art Challenge! This month, we embark on a magical journey with the
+                                theme
+                                "Harry Potter." Immerse yourself in the enchanting world of wizardry, spells, and
+                                fantastical
+                                creatures.
+                            </p>
+                            <p>
+                                Whether you're a fan of Hogwarts, Quidditch, or magical spells, let your creativity
+                                flow. Capture the
+                                essence of the wizarding world through your art – be it illustrations, paintings, or
+                                digital creations.
+                            </p>
+                            <p>
+                                Unleash your artistic talents and create artworks that transport us to the magical realm
+                                of Harry
+                                Potter. We can't wait to see the magic you bring to this month's challenge!
+                            </p>
+                        </div>
+
+                        <div class="tab-container">
+                            <div class="tab" onclick="toggleTab('aug-entries-tab')" data-tab="aug-entries-tab">Monthly
+                                Entries</div>
+                            <div id="aug-entries-tab" class="tab-content">
+                                <img src="./Images/aug_1.PNG" alt="Entry 1">
+                                <img src="./Images/aug_2.PNG" alt="Entry 2">
+                                <img src="./Images/aug_3.PNG" alt="Entry 3">
+                                <img src="./Images/aug_4.PNG" alt="Entry 4">
+                                <img src="./Images/aug_5.PNG" alt="Entry 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="month-container">
+                        <h1>September Art Challenge</h1>
+                        <div class="col-1">
+                            <img src="./Images/sep_pal.PNG" alt="Aug Challenge Image" class="challenge-image">
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                Welcome to the September Art Challenge! This month's theme is "Silhouette." Explore the
+                                beauty and drama that
+                                comes with capturing the essence of subjects in silhouette.
+                            </p>
+                            <p>
+                                Experiment with different lighting conditions, angles, and settings to create
+                                captivating silhouettes. This
+                                challenge encourages you to play with light and shadow, resulting in striking and
+                                memorable compositions.
+                            </p>
+                            <p>
+                                Join our creative community, share your unique interpretations, and let the beauty of
+                                silhouettes unfold in your
+                                artwork. We look forward to seeing the diverse and artistic ways you bring this theme to
+                                life!
+                            </p>
+                        </div>
+
+
+                        <div class="tab-container">
+                            <div class="tab" onclick="toggleTab('sep-entries-tab')" data-tab="sep-entries-tab">Monthly
+                                Entries</div>
+                            <div id="sep-entries-tab" class="tab-content">
+                                <!-- Placeholder images, replace with your actual images -->
+                                <img src="./Images/sep_1.PNG" alt="Entry 1">
+                                <img src="./Images/sep_2.PNG" alt="Entry 2">
+                                <img src="./Images/sep_3.PNG" alt="Entry 3">
+                                <img src="./Images/sep_4.PNG" alt="Entry 4">
+                                <img src="./Images/sep_5.PNG" alt="Entry 5">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="month-container">
+                        <h1>October Art Challenge</h1>
+                        <div class="col-1">
+                            <img src="./Images/eyes_pal.PNG" alt="Oct Challenge Image" class="challenge-image">
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                Welcome to the October Art Challenge! This month's theme is "Eyes." Dive into the
+                                captivating world of eyes and
+                                explore the depth, emotion, and expression they convey.
+                            </p>
+                            <p>
+                                Experiment with different styles, colors, and compositions to convey a variety of
+                                emotions. Whether you choose
+                                to depict realistic eyes or explore abstract and imaginative interpretations, let your
+                                creativity shine.
+                            </p>
+                            <p>
+                                Share your unique perspective on the theme of "Eyes" and join our artistic community in
+                                celebrating the
+                                expressive power of this fascinating subject. We can't wait to see the diverse and
+                                creative ways you interpret
+                                this theme!
+                            </p>
+                        </div>
+                        <div class="tab-container">
+                            <div class="tab" onclick="toggleTab('oct-entries-tab')" data-tab="oct-entries-tab">Monthly
+                                Entries</div>
+                            <div id="oct-entries-tab" class="tab-content">
+                                <!-- Placeholder images, replace with your actual images -->
+                                <img src="./Images/oct_1.PNG" alt="Entry 1">
+                                <img src="./Images/oct_2.PNG" alt="Entry 2">
+                                <img src="./Images/oct_3.PNG" alt="Entry 3">
+                                <img src="./Images/oct_4.PNG" alt="Entry 4">
+                                <img src="./Images/oct_5.PNG" alt="Entry 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="month-container">
+                        <h1>November Art Challenge</h1>
+                        <div class="col-1">
+                            <img src="./Images/nov_pal.PNG" alt="Oct Challenge Image" class="challenge-image">
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                Welcome to the November Art Challenge! This month, we dive into the vibrant and dynamic
+                                world of Anime.
+                                Immerse yourself in the diverse genres, characters, and storytelling that Anime has to
+                                offer.
+                            </p>
+                            <p>
+                                Whether you're a fan of action-packed shonen, heartwarming slice-of-life, or captivating
+                                fantasy, let your
+                                creativity shine. Express your love for your favorite anime series or create original
+                                characters and scenes
+                                inspired by the anime aesthetic.
+                            </p>
+                            <p>
+                                Explore the use of bold colors, expressive emotions, and unique visual styles that
+                                define Anime. Share your
+                                artwork with the community and celebrate the artistry of this beloved and influential
+                                medium.
+                            </p>
+                            <p>
+                                Get ready to embark on an artistic journey filled with energy, imagination, and the
+                                spirit of Anime. We can't
+                                wait to see the incredible creations you bring to this month's challenge!
+                            </p>
+                        </div>
+
+                        <div class="tab-container">
+                            <div class="tab" onclick="toggleTab('nov-entries-tab')" data-tab="nov-entries-tab">Monthly
+                                Entries</div>
+                            <div id="nov-entries-tab" class="tab-content">
+                                <!-- Placeholder images, replace with your actual images -->
+                                <img src="./Images/nov_1.PNG" alt="Entry 1">
+                                <img src="./Images/nov_2.PNG" alt="Entry 2">
+                                <img src="./Images/nov_3.PNG" alt="Entry 3">
+                                <img src="./Images/nov_4.PNG" alt="Entry 4">
+                                <img src="./Images/nov_5.PNG" alt="Entry 5">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="month-container">
+                        <h1>December Art Challenge is Live!</h1>
+                        <div class="col-1">
+                            <img src="./Images/dec_pal.PNG" alt="Oct Challenge Image" class="challenge-image">
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                Welcome to the December Art Challenge! Due to multiple requests, we're continuing
+                                November's theme.
+                            </p>
+
+                        </div>
+
+                        <div class="tab-container">
+                            <div class="tab" onclick="toggleTab('dec-entries-tab')" data-tab="dec-entries-tab">
+                                Monthly
+                                Entries</div>
+                            <div id="dec-entries-tab" class="tab-content">
+                                <p>Will be uploaded soon!</p>
+                                <img src="" alt="Entry 1">
+                                <img src="" alt="Entry 1">
+                                <img src="" alt="Entry 1">
+                                <img src="" alt="Entry 1">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="event">
+                <h1>Past Events</h1>
+                <div class="event-description">
+                    <div class="event-1">
+                        <h2>Fill in the blocks</h2>
+                        <p>
+                            Keeping up the spirit of the Sthapana Divas, we had organized a polyptych event "Fill
+                            in
+                            the Blocks". This is a chance for you to go ham with your creativity and compose
+                            something
+                            amazing!
+                        </p>
+                        <div class="event-poster">
+                            <img src="./Images/ev1.PNG" alt="Event Poster">
+                            <img src="./Images/ev2.PNG" alt="Event Poster">
+                        </div>
+                        <div class="event-tabs">
+                            <div class="tab" onclick="toggleTab('resultsTab1')" data-tab="resultsTab1">Results</div>
+                            <div class="tab" onclick="toggleTab('participantsTab1')" data-tab="participantsTab1">
+                                Participants</div>
+
+                        </div>
+                        <div class="event-content">
+                            <div id="resultsTab1" class="tab-content">
+                                <img src="./Images/fitb2.PNG">
+                                <img src="./Images/fitb3.PNG">
+                            </div>
+                            <div id="participantsTab1" class="tab-content">
+                                <p>Check out the talented artists who participated in the event.</p>
+                                <img src="./Images/fitb1.PNG">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-2">
+                        <h2>Rangoli Competition</h2>
+                        <p>
+                            As the 15th foundation day knocks on our door, we must answer it with all the creativity and
+                            ingenuity of the proud students of IIT Gandhinagar.
+                        </p>
+                        <p>Keeping up with that spirit, we are happy to announce a Rangoli competition. After all, on
+                            this special occasion, it is only appropriate that we beautify our campus with the explosion
+                            of colors.</p>
+                        <div class="event-poster">
+                            <img src="./Images/rc1.PNG" alt="Event Poster">
+                            <img src="./Images/rc2.PNG" alt="Event Poster">
+                        </div>
+                        <div class="event-tabs">
+                            <div class="tab" onclick="toggleTab('resultsTab')" data-tab="resultsTab">Results</div>
+                            <div class="tab" onclick="toggleTab('participantsTab')" data-tab="participantsTab">
+                                Participants</div>
+
+                        </div>
+                        <div class="event-content">
+                            <div id="resultsTab" class="tab-content">
+                                <img src="./Images/rc4.PNG">
+                                <img src="./Images/rc5.PNG">
+                            </div>
+                            <div id="participantsTab" class="tab-content">
+                                <p>Check out the talented artists who participated in the event.</p>
+                                <img src="./Images/rc3.PNG">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-3">
+                        <h2>Rangoli Competition: The Year of Millets</h2>
+                        <p>
+                            Embrace the spirit of creativity as you incorporate the versatile and nutritious millets
+                            into your vibrant and colorful Rangoli designs. From foxtail millet to pearl millet, let
+                            your imagination flow and weave intricate patterns that showcase the beauty and importance
+                            of millets in our lives. This competition is a wonderful opportunity to blend tradition with
+                            innovation, creating visual masterpieces that tell the story of 'The Year of Millets.'
+                        </p>
+                        <div class="event-poster">
+                            <img src="./Images/yom1.PNG" alt="Event Poster">
+                            <img src="./Images/yom2.PNG" alt="Event Poster">
+                        </div>
+                        <div class="event-tabs">
+                            <div class="tab" onclick="toggleTab('resultsTab3')" data-tab="resultsTab3">Results</div>
+                            <div class="tab" onclick="toggleTab('participantsTab3')" data-tab="participantsTab3">
+                                Participants</div>
+
+                        </div>
+                        <div class="event-content">
+                            <div id="resultsTab3" class="tab-content">
+                                <img src="./Images/yom4.PNG">
+                                <img src="./Images/yom5.PNG">
+                                <img src="./Images/yom6.PNG">
+                            </div>
+                            <div id="participantsTab3" class="tab-content">
+                                <p>Check out the talented artists who participated in the event.</p>
+                                <img src="./Images/yom3.PNG">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <hr>
+            <div id="Team">
+                <h1>Core Team Members</h1>
+
+                <div class="team-members">
+                    <div class="secretary team-member">
+                        <img src="./Images/ishu.jpg" alt="Palette Secretary">
+                        <h3>Ishani M Kumar</h3>
+                        <p>Palette Secretary</p>
+                        <div class="social-icons">
+                            <a href="link-to-instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="link-to-linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <!-- Add other social media icons as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Other team members -->
+                    <div class="team-member">
+                        <img src="./Images/jul_1.PNG" alt="Team Member 1">
+                        <h3>Name1 Sirname</h3>
+                        <p>Designation 1</p>
+                        <div class="social-icons">
+                            <a href="link-to-instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="link-to-linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="./Images/jul_2.PNG" alt="Team Member 2">
+                        <h3>Name2 Sirname</h3>
+                        <p>Designation 2</p>
+                        <div class="social-icons">
+                            <a href="link-to-instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="link-to-linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="./Images/jul_1.PNG" alt="Team Member 1">
+                        <h3>Name1 Sirname</h3>
+                        <p>Designation 1</p>
+                        <div class="social-icons">
+                            <a href="link-to-instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="link-to-linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="./Images/jul_2.PNG" alt="Team Member 2">
+                        <h3>Name2 Sirname</h3>
+                        <p>Designation 2</p>
+                        <div class="social-icons">
+                            <a href="link-to-instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="link-to-linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="subtitle">Contact Us</h1>
+                            <p><i class="fa-regular fa-envelope"></i>palette@iitgn.ac.in</p>
+                            <p><i class="fa-regular fa-envelope"></i>ishani.kumar@iitgn.ac.in</p>
+                            <p><i class="fa-solid fa-phone"></i>+91 9938905996</p>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/palette_iitgn/?hl=en">Follow us on instagram!<i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <!--<a href="https://www.linkedin.com/in/chahat-beniwal-b11340260/"><i
+                                        class="fa-brands fa-linkedin"></i></a>-->
+                            </div>
+                            <p>Click <a href="">here</a>
+                                to contact us</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &commat; Palette IIT GN</p>
+
+            </div>
+            <script src="index.js"></script>
+</body>
+
+</html>
